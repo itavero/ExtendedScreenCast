@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin:'application'
+
+mainClassName = 'amnl.cast.extscreen.SomeApp'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'io.netty:netty-all:4.0.+'
+    compile 'su.litvak.chromecast:api-v2:0.0.6'
+    testCompile 'junit:junit:4.11'
+}
